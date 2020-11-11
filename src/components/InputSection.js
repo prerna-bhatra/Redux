@@ -54,7 +54,7 @@ const InputSection = () => {
     <div className="InputSection__container">
     <h6>EMPLOYEE  FORM</h6>
        <input
-       
+        className="form-control"
         type="text"
         placeholder="Name"
         value={name}
@@ -64,7 +64,7 @@ const InputSection = () => {
       />
       
       <input
-        
+         className="form-control"
         type="text"
         placeholder="Email"
         value={email}
@@ -73,7 +73,7 @@ const InputSection = () => {
         }
       />
       <input
-       
+        className="form-control"
         type="number"
         placeholder="Phone"
         value={phn}
@@ -82,7 +82,7 @@ const InputSection = () => {
         }
       />
       <input
-       
+        className="form-control"
         type="number"
         placeholder="Salary"
         value={salary}
@@ -91,7 +91,7 @@ const InputSection = () => {
         }
       />
        <input
-        
+         className="form-control"
         type="text"
         placeholder="Address"
         value={addr}
@@ -100,9 +100,9 @@ const InputSection = () => {
         }
       />
       <input
-        
+         className="form-control"
         type="text"
-        placeholder="Degifnation"
+        placeholder="Designation"
         value={deg}
         onChange={e => 
           dispatch(inputActions.setInputDeg(e.target.value))

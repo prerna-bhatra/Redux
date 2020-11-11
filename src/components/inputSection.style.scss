@@ -6,7 +6,7 @@
   flex-direction: column;
  box-shadow:10px 10px 10px 10px black;
  padding:40px 40px 40px 40px;
-  input, textarea {
+  input{
     min-width: 400px;
     border: solid 1px gray;
 
@@ -35,3 +35,19 @@
     }
   }
 }
+@media screen and (max-width:800px) {
+  .InputSection__container
+  {
+  width:200px;
+    input
+    {
+      min-width:40px;
+    }
+  }
+  }
+
+
+
+
+
+
