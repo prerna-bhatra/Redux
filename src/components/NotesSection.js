@@ -10,10 +10,12 @@ const NotesSection = () => {
 
   const onItemClicked = (item, index) => {
     dispatch(inputActions.setInputId(index));
-    dispatch(inputActions.setInputTitle(item.title));
+    dispatch(inputActions.setInputPhn(item.phn));
       dispatch(inputActions.setInputName(item.name));
         dispatch(inputActions.setInputEmail(item.email));
-    dispatch(inputActions.setInputContent(item.content));
+    dispatch(inputActions.setInputSalary(item.salary));
+    dispatch(inputActions.setInputAddr(item.addr));
+    dispatch(inputActions.setInputDeg(item.deg));
   }
 
 

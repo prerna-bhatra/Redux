@@ -44,6 +44,7 @@ const InputSection = () => {
     }    
   }
 
+
   const deleteNote = () => {
     dispatch(noteActions.deleteNote(id))
     dispatch(inputActions.resetInputs())
