@@ -33,8 +33,7 @@ const NotesSection = () => {
         if(item) {
           return (
             <NoteItem
-
-              phn={item.phn}
+            phn={item.phn}
               deg={item.deg}
               name={item.name}
                email={item.email}

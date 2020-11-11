@@ -115,14 +115,14 @@ const InputSection = () => {
           onClick={id === -1 ? addNote : updateNote}
 
         >
-          {id === -1 ? "ADD NEW EMPLOYEE" : "UPDATE NOTE"}
+          {id === -1 ? "ADD NEW EMPLOYEE" : "UPDATE"}
         </button>      
         {id !== -1 &&
           <button
             onClick={deleteNote}
             style={{ marginLeft: '1em', backgroundColor: 'red' }}
           >
-            DELETE NOTE
+            DELETE 
           </button>
         }
       </div>

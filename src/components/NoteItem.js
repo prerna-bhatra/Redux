@@ -13,15 +13,7 @@ const NoteItem = ({ phn, salary,name, email,addr,deg,onItemClicked}) => {
       <p>Role-:{deg}</p>
       <p>Address-:{addr}</p>
       <p>Salary-:{salary}</p>
-      <div className="row">
-        <div className="col-md-4">
-           <button className="btn btn-success">Update</button>
-        </div>
-        <div className="col-md-4">
-           <button className="btn btn-danger">Delete</button>
-        </div>
       </div>
-    </div>
   );
 };
 
