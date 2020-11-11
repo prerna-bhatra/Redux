@@ -5,6 +5,7 @@ const NoteItem = ({ phn, salary,name, email,addr,deg,onItemClicked}) => {
   return (
     <div
      className="NoteItem__container"
+     
       >
       <p> Name-:{name}</p>
       <p>Email-:{email}</p>

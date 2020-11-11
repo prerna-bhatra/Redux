@@ -20,7 +20,7 @@ const NotesSection = () => {
   if(notes.length === 0) {
     return (
       <div className="NotesSection__container__empty">
-        <p>No Employees ,Please Add</p>
+        <p className="noemp">No Employees ,Please Add</p>
       </div>  
     )
   }
