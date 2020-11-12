@@ -1,0 +1,30 @@
+.NoteItem__container {
+ border-top-right-radius: 150px;
+ border-bottom-left-radius: 150px;
+  padding:30px 30px 30px 30px;
+ 
+  background-color:#FF69B4;
+  box-shadow:10px 20px 10px 1px #FF1493;
+  color:white;
+  margin:30px 30px 30px 30px ;
+}
+
+
+.table
+{
+	 background-color:	#009688;
+	border-radius:10px;
+	 color:white;
+	 box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.table td
+{
+	 border: 1px solid black;
+}
+.NoteItem__container  p
+{
+	border-bottom: 1px solid black;
+	padding: 20px 20px 0px 20px;
+}

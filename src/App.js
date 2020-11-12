@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/createStore';
 import InputSection from './components/InputSection';
-import NotesSection from './components/NotesSection';
+import EmpsSection from './components/EmpsSection';
 import './App.scss';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <h1>GTX TECHNOLOGY</h1>
         <InputSection />
         <div className="line"></div>
-        <NotesSection />
+        <EmpsSection />
       </div>
     </Provider>    
   );

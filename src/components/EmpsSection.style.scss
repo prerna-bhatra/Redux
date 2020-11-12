@@ -1,7 +1,5 @@
 .NotesSection__container {
-  columns: 3 200px;
-  column-gap: 1em;
-  padding: 1em;
+  
 }
 
 .NotesSection__container__empty {
@@ -14,3 +12,9 @@
 {
 	color:white;
 }
+
+.table tr td #heading
+{
+	margin-right:40px ;
+}
+

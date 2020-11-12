@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import noteActions from '../redux/actions/noteActions';
 import inputActions from '../redux/actions/inputActions';
@@ -12,7 +12,7 @@ const InputSection = () => {
   const addr = useSelector(state => state.inputs.addr);
    const name = useSelector(state => state.inputs.name);
     const email = useSelector(state => state.inputs.email);
-   const error=useSelector(state=>"false")
+   const [error,setError]=useState(false)
   const dispatch = useDispatch();
 
   const addNote = () => {
@@ -27,10 +27,11 @@ const InputSection = () => {
         addr
       }))
       dispatch(inputActions.resetInputs())
+      setError(false)
     }
-    else if(name==='' || email==='')
+    else if(name==='' || email==='' || phn==='' || salary==='' || addr==='' || deg==='')
     {
-      console.log("blank")
+          setError(true)
     }
     console.log(phn,addr,deg,salary,name,email)
   }
@@ -50,8 +51,22 @@ const InputSection = () => {
     dispatch(inputActions.resetInputs())
   }
 
+const showerror=()=>
+{
+  if(error)
+  {
+   return(
+    <div className="btn-danger" id="error">
+      <h6 >All fields are required</h6>
+    </div>
+    ) 
+
+  }
+  
+}
   return (
     <div className="InputSection__container">
+   
     <h6>EMPLOYEE  FORM</h6>
        <input
         className="form-control"
@@ -109,7 +124,7 @@ const InputSection = () => {
         }
       />
      
-      <div className="InputSection__container__btnWrapper">
+      <div >
         <button
         className="btn btn-primary"
           onClick={id === -1 ? addNote : updateNote}
@@ -125,6 +140,7 @@ const InputSection = () => {
             DELETE 
           </button>
         }
+         {showerror()}
       </div>
     </div>
   );
