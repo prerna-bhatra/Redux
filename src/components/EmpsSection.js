@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import EmpItem from './EmpItem';
 import inputActions from '../redux/actions/inputActions';
-import './EmpsSection.style.scss';
+import './EmpsSection.style.css';
 
 const NotesSection = () => {
   const dispatch = useDispatch();
@@ -30,15 +30,27 @@ const NotesSection = () => {
   else
   {
     return(
-      <div className="table-responsive">
-       <div className="NotesSection__container__empty">
+      <div className="empdet">
+      <div className="NotesSection__container__empty">
         <h6 className="noemp">Click on row to update or remove</h6>
        </div> 
-
+      <div>
+          <thead className="tbhead">
+          <tr>
+            <td>Name</td>
+            <td className="email" >Email</td>
+            <td className="addr">Address</td>
+            <td className="phn">Phone </td>
+            <td className="deg">Role</td>
+            <td className="salary">Salary</td>
+          </tr>
+          </thead>
+          </div>
+      <div className="table-responsive">
         <table className="table table-bordered table-hover table-condensed">
-            <tbody>
+         <tbody>
           <React.Fragment>
-             {notes.map((item,index) => (
+           {notes.map((item,index) => (
                   <EmpItem 
                     phn={item.phn}
                   deg={item.deg}
@@ -55,6 +67,7 @@ const NotesSection = () => {
         
             </tbody>
         </table>
+        </div>
         </div>
       )
   }

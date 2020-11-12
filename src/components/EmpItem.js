@@ -4,12 +4,10 @@ import './EmpItem.styles.css';
 const NoteItem = ({ phn, salary,name, email,addr,deg,onItemClicked}) => {
   return (
     <div >
-   
-     <tr
+    <tr
      role="button"
       onClick={onItemClicked}>
-      
-      <td>{name}</td>
+       <td>{name}</td>
        <td>{email}</td>
         <td>{addr}</td>
          <td>{phn}</td>

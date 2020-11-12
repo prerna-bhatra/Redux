@@ -2,7 +2,7 @@ import React ,{useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import noteActions from '../redux/actions/noteActions';
 import inputActions from '../redux/actions/inputActions';
-import './inputSection.style.scss';
+import './inputSection.style.css';
 
 const InputSection = () => {
   const id = useSelector(state => state.inputs.id);
@@ -56,7 +56,7 @@ const showerror=()=>
   if(error)
   {
    return(
-    <div className="btn-danger" id="error">
+    <div className="alert alert-danger">
       <h6 >All fields are required</h6>
     </div>
     ) 
@@ -68,6 +68,7 @@ const showerror=()=>
     <div className="InputSection__container">
    
     <h6>EMPLOYEE  FORM</h6>
+    {showerror()}
        <input
         className="form-control"
         type="text"
@@ -135,12 +136,13 @@ const showerror=()=>
         {id !== -1 &&
           <button
             onClick={deleteNote}
-            style={{ marginLeft: '1em', backgroundColor: 'red' }}
+            style={{ marginLeft: '1em'}}
+            className="btn btn-danger"
           >
             DELETE 
           </button>
         }
-         {showerror()}
+         
       </div>
     </div>
   );

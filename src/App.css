@@ -15,3 +15,17 @@ h1
 	 font-family: courgette;
 	  color: white;
 }
+.navb
+{
+	background-color:  #EE82EE;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin-bottom: 50px !important;
+  z-index: 999;
+}
+.main
+{
+  margin:100px 40px 40px 40px;
+
+}

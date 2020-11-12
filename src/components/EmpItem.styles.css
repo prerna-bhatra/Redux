@@ -1,21 +1,9 @@
-.NoteItem__container {
- border-top-right-radius: 150px;
- border-bottom-left-radius: 150px;
-  padding:30px 30px 30px 30px;
- 
-  background-color:#FF69B4;
-  box-shadow:10px 20px 10px 1px #FF1493;
-  color:white;
-  margin:30px 30px 30px 30px ;
-}
-
-
 .table
 {
-	 background-color:	#009688;
+	 background-color:white;
 	border-radius:10px;
-	 color:white;
-	 box-shadow: 10px 10px 10px 10px black;
+	font-size: 15px;
+	object-fit: fill;
 
 }
 
@@ -28,3 +16,54 @@
 	border-bottom: 1px solid black;
 	padding: 20px 20px 0px 20px;
 }
+.table-responsive
+{
+	height: 500px;
+}
+.email
+{
+	padding-left: 200px;
+	padding-right: 80px;
+	
+}
+
+.addr
+{
+	padding-left: 100px;
+	padding-right: 80px;
+	
+}
+.phn
+{
+padding-left:10px;
+	padding-right: 20px;	
+}
+.deg
+{
+	padding-left:50px;
+	padding-right: 20px;	
+	
+}
+
+@media only screen and (max-width: 600px) {
+
+ .tbhead
+ {
+ 	display: none;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
